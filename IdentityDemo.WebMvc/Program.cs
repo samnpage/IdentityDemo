@@ -1,5 +1,6 @@
 using IdentityDemo.Data;
 using IdentityDemo.Data.Entities;
+using IdentityDemo.Services.User;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString);
 });
 
-// builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddDefaultIdentity<UserEntity>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
