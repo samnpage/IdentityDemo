@@ -1,0 +1,15 @@
+@model IdentityDemo.Models.User.UserLogin
+@{
+    string title = "Login";
+    ViewData["Title"] = title;
+}
+
+<h1>@title</h1>
+<form action="">
+    <div>
+        <label asp-for="UserName">User Name</label>
+        <input type="text">
+        <label asp-for="Password">Password</label>
+        <input type="text">
+    </div>
+</form>
