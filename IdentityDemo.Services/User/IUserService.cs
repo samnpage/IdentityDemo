@@ -1,5 +1,4 @@
 using IdentityDemo.Models.User;
-using Microsoft.AspNetCore.Identity;
 
 namespace IdentityDemo.Services.User;
 
