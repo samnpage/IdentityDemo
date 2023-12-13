@@ -42,6 +42,7 @@ public class UserService : IUserService
 
         UserEntity user = new()
         {
+            Name = model.Name,
             UserName = model.UserName,
             Email = model.Email
         };
